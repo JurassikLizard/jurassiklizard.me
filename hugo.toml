@@ -32,6 +32,11 @@ title = "Jurassik's Hideout"
   [params.Logo]
     logoText = "Jurassik"
 
+[markup]
+  [markup.highlight]
+    style = 'fruity'
+    tabWidth = 4
+
 [module]
   # In case you would like to make changes to the theme and keep it locally in you repository,
   # uncomment the line below (and correct the local path if necessary).

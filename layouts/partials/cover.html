@@ -15,13 +15,12 @@
 
 {{if $cover -}}
   <!-- Cover image found -->
-  {{- $cover := $cover.Fit .Params.cover_size -}}
+  {{- $cover := $cover.Fit "600x400" -}}
   <img src="{{ $cover.RelPermalink }}"
     class="post-cover"
     alt="{{ .Title | plainify | default " " }}"
     title="{{ .Params.CoverCredit |plainify|default "Cover Image" }}" />
-{{else}} 
-  <p>{{(add "/posts/static/" .Params.cover) | absURL }}</p>
+{{else}}
   {{- $cover := resources.Get (add "posts/static/" .Params.cover) -}}
-  {{- $cover := $cover.Fit .Params.cover_size -}}
+  {{- $cover := $cover.Fit "600x400" -}}
 {{- end }}
