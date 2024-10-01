@@ -7,15 +7,12 @@ title = "Jurassik's Hideout"
   # dir name of your main content (default is `content/posts`).
   # the list of set content will show up on your index page (baseurl).
   contentTypeName = "posts"
-
   # show selector to switch language
   showLanguageSelector = false
 
   showMenuItems = 5
-
   # set theme to full screen width
   fullWidthTheme = false
-
   # center theme with default width
   centerTheme = true
 
@@ -27,6 +24,10 @@ title = "Jurassik's Hideout"
   # set post to show the last updated
   # If you use git, you can set `enableGitInfo` to `true` and then post will automatically get the last updated
   showLastUpdated = false
+
+  menuMore = "Show more"
+  readMore = "Read more"
+  readOtherPosts = "Read other posts"
 
   [params.Logo]
     logoText = "Jurassik"

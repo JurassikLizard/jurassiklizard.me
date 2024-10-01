@@ -64,6 +64,8 @@ h2 {
 }
 
 h1 {
+  color: hsl(from var(--neon-pink) h calc(s/2) l);
+
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: calc(var(--font-size) * 0.2);
@@ -79,7 +81,11 @@ h1 {
 }
 
 /* CUSTOM */
+/* .post-title, .post-title a {
+  color: hsl(from var(--neon-pink) h calc(s/2) l);
+} */
 h2 {
+  color: var(--accent);
   font-size: calc(var(--font-size) * 1.2);
   text-shadow:
     0 0 5px color-mix(in srgb, var(--accent), transparent 50%),
@@ -113,7 +119,8 @@ table {
   margin: calc(var(--line-height) * 1.2) 0;
 }
 
-a {
+/* CUSTOM */
+h1 h2 :not(.post-title) a {
   color: var(--accent);
 }
 
