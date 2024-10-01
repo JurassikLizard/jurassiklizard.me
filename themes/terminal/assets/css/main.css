@@ -111,7 +111,7 @@ blockquote.twitter-tweet::before {
   display: flex;
   flex-direction: column;
   padding: 40px;
-  max-width: 864px;
+  max-width: calc(864px * 1.125);
   min-height: 100vh;
   border-right: 1px solid color-mix(in srgb, var(--accent) 10%, transparent);
 }

@@ -11,6 +11,8 @@ title = "Jurassik's Hideout"
   # show selector to switch language
   showLanguageSelector = false
 
+  showMenuItems = 5
+
   # set theme to full screen width
   fullWidthTheme = false
 
