@@ -86,7 +86,7 @@ h2 {
     0 0 10px color-mix(in srgb, var(--accent), transparent 45%),
     0 0 15px color-mix(in srgb, var(--accent), transparent 40%), /* Soft glow */
     0 0 20px var(--accent), /* Intense glow */
-    0 0 30px var(--acent); /* Maximum glow effect */
+    0 0 30px var(--accent); /* Maximum glow effect */
 }
 
 h3,
