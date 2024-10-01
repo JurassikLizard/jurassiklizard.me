@@ -17,7 +17,7 @@
 
 {{if $cover -}}
   <!-- Cover image found -->
-  {{- $cover := $cover.Fit "600x400" -}}
+  {{- $cover := $cover.Fit .Params.cover_size -}}
   <img src="{{ $cover.RelPermalink }}"
     class="post-cover"
     alt="{{ .Title | plainify | default " " }}"
