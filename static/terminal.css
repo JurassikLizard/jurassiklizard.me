@@ -81,9 +81,12 @@ h1 {
 }
 
 /* CUSTOM */
-/* .post-title, .post-title a {
+.post-title {
   color: hsl(from var(--neon-pink) h calc(s/2) l);
-} */
+}
+h1.post-title a {
+  color: hsl(from var(--neon-pink) h calc(s/2) l);
+}
 h2 {
   color: var(--accent);
   font-size: calc(var(--font-size) * 1.2);
@@ -120,9 +123,9 @@ table {
 }
 
 /* CUSTOM */
-h1 h2 :not(.post-title) a {
+/* h1 h2 :not(.post-title) a {
   color: var(--accent);
-}
+} */
 
 button {
   position: relative;
