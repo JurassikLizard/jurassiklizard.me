@@ -1,0 +1,126 @@
+{{ define "main" }}
+<article class="post">
+  <h1 class="post-title">
+    <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+  </h1>
+  <div class="post-meta">
+    {{- if .Date -}}
+      <time class="post-date">
+        {{- .Date.Format "2006-01-02" -}}
+        {{- if $.Site.Params.showLastUpdated -}}
+          [{{- or $.Site.Params.updatedDatePrefix "Updated" -}} :: {{- .Lastmod.Format "2006-01-02" -}}]
+        {{- end -}}
+      </time>
+    {{- end -}}
+    {{- with .Params.Author -}}
+      <span class="post-author">{{ . }}</span>
+    {{- end -}}
+    {{- if and (.Param "readingTime") (eq (.Param "readingTime") true) -}}
+      <span class="post-reading-time">{{ .ReadingTime }} {{ $.Site.Params.minuteReadingTime | default "min read" }} ({{ .WordCount }} {{ $.Site.Params.words | default "words" }})</span>
+    {{- end -}}
+  </div>
+
+  {{ if .Params.tags }}
+    <span class="post-tags">
+      {{ range .Params.tags }}
+      #<a href="{{ (urlize (printf "tags/%s/" .)) | absLangURL }}">{{ . }}</a>&nbsp;
+      {{ end }}
+    </span>
+  {{ end }}
+  {{ partial "cover.html" . }}
+
+  {{ if (.Params.Toc | default .Site.Params.Toc) }}
+    <div class="table-of-contents">
+      <h2>
+        {{ (.Params.TocTitle | default .Site.Params.TocTitle) | default "Table of Contents" }}
+      </h2>
+      {{ .TableOfContents }}
+    </div>
+  {{ end }}
+
+  <div class="post-content">
+    {{- with .Content -}}
+      <div>
+        {{ . | replaceRE "(<h[1-9] id=\"([^\"]+)\".+)(</h[1-9]+>)" `${1}<a href="#${2}" class="hanchor" ariaLabel="Anchor">#</a> ${3}` | safeHTML }}
+      </div>
+    {{- end -}}
+  </div>
+
+  <style>
+    .shape {
+      position: absolute;
+      opacity: 0.5;
+      z-index: -1;
+      animation: float 10s infinite alternate ease-in-out;
+    }
+
+    /* Animation to give floating effect */
+    @keyframes float {
+        from {
+            transform: translateY(0);
+        }
+        to {
+            transform: translateY(-20px);
+        }
+    }
+  </style>
+
+  <script>
+    function getRandomInt(min, max) {
+      return Math.floor(Math.random() * (max-min)) + min;
+    }
+
+    function createShape() {
+      const shape = document.createElement('div');
+      const size = getRandomInt(3, 12); // Random size
+      const posX = getRandomInt(0, 100-1.1*size); // Random X position
+      const posY = getRandomInt(0, document.body.scrollHeight); // Random Y position
+      const shapeType = getRandomInt(0, 3); // 0 = circle, 1 = square, 2 = triangle
+      const color = getRandomColor();
+
+      shape.style.width = `${size}vw`;
+      shape.style.height = `${size}vw`;
+      shape.style.left = `${posX}vw`;
+      shape.style.top = `${posY}px`;
+      shape.style.backgroundColor = color;
+
+      if (shapeType === 0) {
+          // Circle
+          shape.style.borderRadius = '50%';
+      } else if (shapeType === 1) {
+        // Already a square
+      } 
+      else if (shapeType === 1) {
+          // Triangle
+          shape.style.width = '0';
+          shape.style.height = '0';
+          shape.style.borderLeft = `${size / 2}px solid transparent`;
+          shape.style.borderRight = `${size / 2}px solid transparent`;
+          shape.style.borderBottom = `${size}px solid ${color}`;
+      }
+
+      shape.classList.add('shape');
+      document.body.appendChild(shape);
+    }
+
+    function getRandomColor() {
+      const colors = ['#59ab88', '#8c4187', '#3c4191', '#5bad4c', '#d1c84d'];
+      return colors[getRandomInt(0, colors.length - 1)];
+    }
+
+    const numShapes = Math.floor(document.body.scrollHeight / window.innerHeight) * 15;
+    // Generate multiple shapes
+    for (let i = 0; i < numShapes; i++) {
+      createShape();
+    }
+  </script>
+
+  {{ if eq .Type $.Site.Params.contentTypeName }}
+    {{ partial "posts_pagination.html" . }}
+  {{ end }}
+
+  {{ if not (.Params.hideComments | default false) }}
+    {{ partial "comments.html" . }}
+  {{ end }}
+</article>
+{{ end }}

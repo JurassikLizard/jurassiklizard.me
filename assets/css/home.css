@@ -1,0 +1,13 @@
+.pgp-container {
+    margin: 20px;
+    text-align: center;
+}
+
+#pgpKey {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    white-space: pre-wrap;
+    text-align: left;
+}

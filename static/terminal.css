@@ -9,13 +9,13 @@
   --radius: 0pxpx;
 }
 
-/* CUSTOM -------------------- */
+/* < CUSTOM -------------------- */
 
 .container {
   background-color: #111212;
 }
 
-/* CUSTOM -------------------- */
+/* CUSTOM /> -------------------- */
 
 html {
   box-sizing: border-box;
@@ -38,6 +38,7 @@ body {
     Consolas,
      "Ubuntu Mono",
     monospace;
+  /* font-family: "Sofia Sans", sans-serif; */
   font-size: 1rem;
   font-weight: 400;
   line-height: var(--line-height);
