@@ -2,6 +2,11 @@ baseURL = "//C:/Dev/Web/jurassiklizard/public/"
 languageCode = "en-us"
 title = "Jurassik's Hideout"
 
+[menus]
+  [[menus.main]]
+    name = 'Posts'
+    pageRef = '/posts'
+    weight = 10
 
 [params]
   # dir name of your main content (default is `content/posts`).
