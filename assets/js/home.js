@@ -23,7 +23,7 @@ function createRandomCube() {
     const sideSize = Math.random() * 1.5 + 0.5;
 
     const geometry = new THREE.BoxGeometry(sideSize, sideSize, sideSize); // Base size of cubes
-    const colors = [0x00ffcc, 0xff77ff]; // Pink and Blue colors for vaporwave
+    const colors = [0x00ffcc, 0xff77ff, 0x04d9ff, 0xbc00fe]; // Pink and Blue colors for vaporwave
     const material = new THREE.LineBasicMaterial({ 
         color: colors[Math.floor(Math.random() * colors.length)], // Random color
         transparent: true, 
@@ -41,8 +41,11 @@ function createRandomCube() {
 
     // Random rotation speed and direction
     line.rotationSpeed = {
-        x: (Math.random() - 0.5) * 0.02, // Random speed for x rotation
-        y: (Math.random() - 0.5) * 0.02, // Random speed for y rotation
+        x: (Math.random() - 0.5) * 0.015, // Random speed for x rotation
+        y: (Math.random() - 0.5) * 0.015, // Random speed for y rotation
+        z: (Math.random() - 0.5) * 0.015,
+        w: (Math.random() - 0.5) * 0.01,
+        v: (Math.random()/2) * 0.0075
     };
 
     scene.add(line);
@@ -66,6 +69,19 @@ function animate() {
     cubes.forEach((cube) => {
         cube.rotation.x += cube.rotationSpeed.x;
         cube.rotation.y += cube.rotationSpeed.y;
+        cube.rotation.z += cube.rotationSpeed.z;
+
+        // Floating up effect
+        cube.position.y += cube.rotationSpeed.v;
+        
+        // If the cube reaches a certain height, reset its position
+        if (cube.position.y > frustumSize/2+1) {
+            cube.position.y = -(frustumSize/2+1);
+        }
+
+        // Bobbing effect on the x-axis
+        const bobbingSpeed = 2; // Speed of bobbing
+        cube.position.x += Math.sin(Date.now() * 0.0005) * cube.rotationSpeed.w;
     });
     renderer.render(scene, camera);
 }
