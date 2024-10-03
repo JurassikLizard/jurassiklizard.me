@@ -21,7 +21,7 @@
 {{ $js := resources.Match "js/*.js" }}
 {{ range $js }}
   {{ $javascript := . | minify | fingerprint }}
-  <script defer type="text/javascript" src="{{ $javascript.Permalink }}"></script>
+  <script defer type="module" src="{{ $javascript.Permalink }}"></script>
 {{ end }}
 
 <!-- Custom Terminal.css styles -->
