@@ -1,5 +1,5 @@
 +++
-title = "Theme developments"
+title = "Welcome!"
 date = "2024-10-02"
 author = "JurassikLizard"
 cover = "cover.png"

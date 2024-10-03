@@ -18,14 +18,45 @@ renderer.setAnimationLoop( animate );
 const canvasContainer = document.querySelector('.canvas-container');
 canvasContainer.appendChild(renderer.domElement);
 
+function createStarGeometry(size) {
+    const shape = new THREE.Shape();
+    const spikes = 5;
+    const outerRadius = size;
+    const innerRadius = size / 2;
+    for (let i = 0; i < spikes * 2; i++) {
+        const angle = (i / (spikes * 2)) * Math.PI * 2;
+        const radius = i % 2 === 0 ? outerRadius : innerRadius;
+        const x = Math.cos(angle) * radius;
+        const y = Math.sin(angle) * radius;
+        if (i === 0) {
+            shape.moveTo(x, y);
+        } else {
+            shape.lineTo(x, y);
+        }
+    }
+    const geometry = new THREE.ShapeGeometry(shape);
+    return geometry;
+}
+
 function createRandomCube() {
     // Generate random sizes for the cube
     const sideSize = Math.random() * 1.5 + 0.5;
 
-    const geometry = new THREE.BoxGeometry(sideSize, sideSize, sideSize); // Base size of cubes
-    const colors = [0x00ffcc, 0xff77ff, 0x04d9ff, 0xbc00fe]; // Pink and Blue colors for vaporwave
+    const randomShape = Math.floor(Math.random() * 2); // 0 for cube, 1 for tetrahedron
+    var geometry;
+
+    switch (randomShape) {
+        case 0: // Cube
+            geometry = new THREE.BoxGeometry(sideSize, sideSize, sideSize);
+            break;
+        case 1: // Tetrahedron
+            geometry = new THREE.TetrahedronGeometry(sideSize, Math.floor(Math.random() * 2));
+            break;
+    }
+
+    const colors = [0x00ffcc, 0xff77ff, 0x04d9ff, 0xbc00fe, 0x9600ff, 0x00b8ff, 0x00fff9];
     const material = new THREE.LineBasicMaterial({ 
-        color: colors[Math.floor(Math.random() * colors.length)], // Random color
+        color: colors[Math.floor(Math.random() * colors.length)],
         transparent: true, 
         opacity: 0.5 
     });
@@ -41,11 +72,11 @@ function createRandomCube() {
 
     // Random rotation speed and direction
     line.rotationSpeed = {
-        x: (Math.random() - 0.5) * 0.015, // Random speed for x rotation
-        y: (Math.random() - 0.5) * 0.015, // Random speed for y rotation
-        z: (Math.random() - 0.5) * 0.015,
+        x: (Math.random() - 0.5) * 0.005, // Random speed for x rotation
+        y: (Math.random() - 0.5) * 0.005, // Random speed for y rotation
+        z: (Math.random() - 0.5) * 0.005,
         w: (Math.random() - 0.5) * 0.01,
-        v: (Math.random()/2) * 0.0075
+        v: (Math.random()/2) * 0.005
     };
 
     scene.add(line);
