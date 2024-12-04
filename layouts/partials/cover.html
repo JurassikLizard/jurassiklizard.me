@@ -20,7 +20,4 @@
     class="post-cover"
     alt="{{ .Title | plainify | default " " }}"
     title="{{ .Params.CoverCredit |plainify|default "Cover Image" }}" />
-{{else if os.FileExists (add "posts/static/" .Params.cover) }}
-  {{- $cover := resources.Get (add "posts/static/" .Params.cover) -}}
-  {{- $cover := $cover.Fit "600x400" -}}
 {{- end }}

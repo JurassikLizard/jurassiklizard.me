@@ -121,9 +121,9 @@ document.getElementById("pgpToggle").addEventListener("click", function() {
     var pgpKey = document.getElementById("pgpKey");
     if (pgpKey.classList.contains("hidden")) {
         pgpKey.classList.remove("hidden");
-        this.textContent = "Hide PGP Key";
+        this.textContent = this.textContent.replace("Show", "Hide");
     } else {
         pgpKey.classList.add("hidden");
-        this.textContent = "Show PGP Key";
+        this.textContent = this.textContent.replace("Hide", "Show");
     }
 });
