@@ -54,7 +54,7 @@
         {{ with .Resources.Get (add .File.BaseFileName ".md.signed") }}
             {{ .Content }}
         {{ else }}
-            <p style="text-align: center;">Careful! This post is unsiged by JurassikLizard!</p>
+            <p style="text-align: center;">Careful! This post is unsigned by JurassikLizard!</p>
         {{ end }}
     </pre>
 </div>

@@ -10,7 +10,7 @@ Get-ChildItem -Path $directory -Recurse -Filter "*.md" | ForEach-Object {
     $outputFile = [System.IO.Path]::ChangeExtension($file, ".md.signed")
 
     # Clearsign the file using Gpg4win's gpg command
-    & gpg --output $outputFile --yes --clear-sign $file
+    & gpg --output $outputFile --passphrase $pass --yes --clear-sign $file
 
     # Check if the signing was successful
     if ($LASTEXITCODE -eq 0) {
