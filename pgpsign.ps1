@@ -1,6 +1,6 @@
 # Set the directory to scan
 $directory = "content/posts"
-
+ 
 # Find all .md files in the directory and its subdirectories
 Get-ChildItem -Path $directory -Recurse -Filter "*.md" | ForEach-Object {
     # Get the full path of the original .md file
