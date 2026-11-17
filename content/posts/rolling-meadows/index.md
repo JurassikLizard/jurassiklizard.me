@@ -6,7 +6,7 @@ description = "Chronicle of a long expedition."
 theme = "medieval"
 +++
 
-## {{< style class="rune" >}}abte{{< /style >}}
+# {{< style class="rune" >}}abte{{< /style >}}
 
 The rolling meadows were punctured by jagged breaks of crumbling rocks, connected by small stretches of scraggly woods. As the sun drifted down below the grass and ignited the shimmering air with a soft warm glow, A* took shelter in the nook of a rock formation. Sitting just on the edge of the woods and meadows, he settled his rucksack on the ground, and took stock of his provisions. After ensuring this evening's ration would still allow him to make it to H& with food to spare, he scraped together a tiny fire, heating up some salted cod and dried bread. Letting the flickering light warm up his face, he dozed off; propping up his head with his forearm.
 
