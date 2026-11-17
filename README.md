@@ -110,7 +110,9 @@ For an indented dialogue line with less space than a normal paragraph break, put
 
 ```markdown
 “Stay close.”
+
 {{< softbreak >}}
+
 “I am.”
 ```
 
