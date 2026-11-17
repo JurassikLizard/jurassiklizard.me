@@ -25,13 +25,13 @@ body.theme-medieval {
 
 @font-face {
   font-family: "Rune Script";
-  src: url("/fonts/rune-script.woff2") format("woff2");
+  src: url("/fonts/Dwemer.woff2") format("woff2");
   font-display: swap;
 }
 
 body.theme-medieval .rune {
   font-family: "Rune Script", serif;
-  color: var(--medieval-heading);
+  /* color: var(--medieval-heading); */
 }
 
 body.theme-medieval p {
