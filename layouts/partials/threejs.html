@@ -10,4 +10,6 @@
 </style>
 
 <div class="canvas-container"></div>
+{{- $background := resources.Get "threejs/background.js" | minify | fingerprint }}
+<script defer type="module" src="{{ $background.Permalink }}"></script>
 {{- end -}}
