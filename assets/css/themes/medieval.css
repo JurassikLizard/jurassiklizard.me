@@ -43,8 +43,15 @@ body.theme-medieval .post-content > div > p:first-of-type {
 }
 
 body.theme-medieval .soft-break {
-  display: block;
   height: 0.5em;
+}
+
+body.theme-medieval .post-content p:has(+ .soft-break) {
+  margin-bottom: 0;
+}
+
+body.theme-medieval .post-content .soft-break + p {
+  margin-top: 0;
 }
 
 body.theme-medieval .container {
