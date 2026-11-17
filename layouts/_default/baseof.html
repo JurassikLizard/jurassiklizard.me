@@ -19,7 +19,7 @@
 
   {{ partial "head.html" . }}
 </head>
-<body>
+<body{{ with .Params.theme }} class="theme-{{ urlize . }}"{{ end }}>
 {{ $container := cond ($.Site.Params.FullWidthTheme | default false) "container full" (cond ($.Site.Params.CenterTheme | default false) "container center" "container") }}
 
 {{ partial "threejs.html" . }}

@@ -1,12 +1,13 @@
+{{- if ne .Params.theme "medieval" -}}
 <style>
-    .canvas-container {
-        position: fixed; /* Fixed position for the canvas */
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh; /* Full viewport height */
-        z-index: -1; /* Keep it behind other content */
-    }
+  .canvas-container {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+  }
 </style>
 
 <div class="canvas-container"></div>
+{{- end -}}

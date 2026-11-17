@@ -2,7 +2,6 @@
 title = "Lost Adventurer's Diary"
 date = "2025-01-08"
 author = "JurassikLizard"
-cover = "cover.png"
 description = "Introduction."
 +++
 # 0. Introduction

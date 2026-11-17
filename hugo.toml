@@ -1,5 +1,5 @@
-baseURL = "https://jurassiklizard-me.pages.dev/"
-languageCode = "en-us"
+baseURL = "https://jurassiklizard.me"
+locale = "en-US"
 title = "Jurassik's Hideout"
 
 [menus]

@@ -23,6 +23,13 @@
   {{ $javascript := . | minify | fingerprint }}
   <script defer type="module" src="{{ $javascript.Permalink }}"></script>
 {{ end }}
+{{ with .Params.theme }}
+  {{ $themeFile := printf "css/themes/%s.css" (urlize .) }}
+  {{ with resources.Get $themeFile }}
+    {{ $themeStyles := . | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $themeStyles.Permalink }}">
+  {{ end }}
+{{ end }}
 
 <!-- Custom Terminal.css styles -->
 {{ if (fileExists "static/terminal.css") -}}

@@ -48,16 +48,7 @@
     {{- end -}}
 </div>
 
-<div class="pgp-container">
-    <button id="pgpToggle">PGP Signature</button>
-    <pre id="pgpKey" class="hidden">
-        {{ with .Resources.Get (add .File.BaseFileName ".md.signed") }}
-            {{ .Content }}
-        {{ else }}
-            <p style="text-align: center;">Careful! This post is unsigned by JurassikLizard!</p>
-        {{ end }}
-    </pre>
-</div>
+{{ partial "pgp.html" (dict "page" . "label" "PGP Signature") }}
 
 {{ if eq .Type $.Site.Params.contentTypeName }}
     {{ partial "posts_pagination.html" . }}

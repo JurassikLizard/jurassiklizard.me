@@ -1,0 +1,79 @@
+body.theme-medieval {
+  --background: #e9d8b2;
+  --foreground: #382919;
+  --accent: #76552d;
+  --neon-pink: #7a3028;
+  --neon-green: #52603b;
+  --radius: 2px;
+  background:
+    radial-gradient(ellipse at 50% 12%, rgba(255, 250, 226, 0.8), transparent 62rem),
+    #d2bd91;
+  color: #382919;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+body.theme-medieval .container {
+  background: transparent;
+}
+
+body.theme-medieval .content {
+  margin: 2rem auto;
+  padding: clamp(1.5rem, 5vw, 4rem);
+  border: 8px double #8a6b3f;
+  background:
+    linear-gradient(90deg, rgba(111, 77, 35, 0.045), transparent 12%, transparent 88%, rgba(111, 77, 35, 0.045)),
+    #f0e2c3;
+  box-shadow: 0 12px 32px rgba(48, 34, 15, 0.22), inset 0 0 36px rgba(125, 87, 42, 0.12);
+  color: #382919;
+}
+
+body.theme-medieval h1,
+body.theme-medieval h2,
+body.theme-medieval .post-title,
+body.theme-medieval .post-title a {
+  font-family: Georgia, "Times New Roman", serif;
+  letter-spacing: 0.06em;
+  text-shadow: none;
+}
+
+body.theme-medieval h1,
+body.theme-medieval .post-title,
+body.theme-medieval .post-title a {
+  color: #74352a;
+}
+
+body.theme-medieval h2,
+body.theme-medieval blockquote,
+body.theme-medieval code,
+body.theme-medieval kbd {
+  color: #76552d;
+}
+
+body.theme-medieval blockquote,
+body.theme-medieval pre,
+body.theme-medieval table,
+body.theme-medieval th,
+body.theme-medieval td,
+body.theme-medieval button,
+body.theme-medieval img {
+  border-color: #8a6b3f;
+}
+
+body.theme-medieval button {
+  color: #5a3924;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+body.theme-medieval .post-content > div > p:first-of-type::first-letter {
+  float: left;
+  margin: 0.08em 0.12em 0 0;
+  color: #74352a;
+  font-size: 3.2em;
+  line-height: 0.8;
+}
+
+body.theme-medieval a {
+  color: #74352a;
+  text-decoration-color: #a1814b;
+}
