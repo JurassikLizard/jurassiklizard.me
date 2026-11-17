@@ -106,6 +106,8 @@ For a medieval post, put the font at `static/fonts/rune-script.woff2` (or update
 
 For custom text, use the `style` shortcode: `{{< style class="rune" >}}ᚱᚢᚾᛖ{{< /style >}}`. Define its class in the medieval stylesheet; the `rune` class uses the custom font.
 
+For a dialogue break with less space than a new paragraph, use `{{< softbreak >}}` between lines in the same paragraph: `“Stay close.”{{< softbreak >}}“I am.”`.
+
 ## Project layout
 
 - `hugo.toml`: site title, URL, menu, theme, and Hugo settings

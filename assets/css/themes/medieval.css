@@ -38,6 +38,15 @@ body.theme-medieval p {
   text-indent: 2em;
 }
 
+body.theme-medieval .post-content > div > p:first-of-type {
+  text-indent: 0;
+}
+
+body.theme-medieval .soft-break {
+  display: block;
+  height: 0.5em;
+}
+
 body.theme-medieval .container {
   background: transparent;
 }
@@ -102,7 +111,6 @@ body.theme-medieval .post-content > div > p:first-of-type::first-letter {
   color: var(--medieval-heading);
   font-size: 3.2em;
   line-height: 0.8;
-  text-indent: 0;
 }
 
 body.theme-medieval a {
