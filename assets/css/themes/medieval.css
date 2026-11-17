@@ -1,15 +1,41 @@
 body.theme-medieval {
-  --background: #e9d8b2;
-  --foreground: #382919;
-  --accent: #76552d;
-  --neon-pink: #7a3028;
-  --neon-green: #52603b;
+  --medieval-page: #d2bd91;
+  --medieval-paper: #f0e2c3;
+  --medieval-paper-glow: rgba(255, 250, 226, 0.8);
+  --medieval-paper-shade: rgba(111, 77, 35, 0.045);
+  --medieval-paper-shadow: rgba(125, 87, 42, 0.12);
+  --medieval-shadow: rgba(48, 34, 15, 0.22);
+  --medieval-text: #382919;
+  --medieval-bold: #5a3924;
+  --medieval-heading: #74352a;
+  --medieval-secondary: #76552d;
+  --medieval-link: #74352a;
+  --medieval-link-underline: #a1814b;
+  --medieval-border: #8a6b3f;
+  --background: var(--medieval-paper);
+  --foreground: var(--medieval-text);
+  --accent: var(--medieval-secondary);
   --radius: 2px;
   background:
-    radial-gradient(ellipse at 50% 12%, rgba(255, 250, 226, 0.8), transparent 62rem),
-    #d2bd91;
-  color: #382919;
+    radial-gradient(ellipse at 50% 12%, var(--medieval-paper-glow), transparent 62rem),
+    var(--medieval-page);
+  color: var(--medieval-text);
   font-family: Georgia, "Times New Roman", serif;
+}
+
+@font-face {
+  font-family: "Rune Script";
+  src: url("/fonts/rune-script.woff2") format("woff2");
+  font-display: swap;
+}
+
+body.theme-medieval .rune {
+  font-family: "Rune Script", serif;
+  color: var(--medieval-heading);
+}
+
+body.theme-medieval p {
+  text-indent: 2em;
 }
 
 body.theme-medieval .container {
@@ -19,12 +45,12 @@ body.theme-medieval .container {
 body.theme-medieval .content {
   margin: 2rem auto;
   padding: clamp(1.5rem, 5vw, 4rem);
-  border: 8px double #8a6b3f;
+  border: 8px double var(--medieval-border);
   background:
-    linear-gradient(90deg, rgba(111, 77, 35, 0.045), transparent 12%, transparent 88%, rgba(111, 77, 35, 0.045)),
-    #f0e2c3;
-  box-shadow: 0 12px 32px rgba(48, 34, 15, 0.22), inset 0 0 36px rgba(125, 87, 42, 0.12);
-  color: #382919;
+    linear-gradient(90deg, var(--medieval-paper-shade), transparent 12%, transparent 88%, var(--medieval-paper-shade)),
+    var(--medieval-paper);
+  box-shadow: 0 12px 32px var(--medieval-shadow), inset 0 0 36px var(--medieval-paper-shadow);
+  color: var(--medieval-text);
 }
 
 body.theme-medieval h1,
@@ -34,19 +60,24 @@ body.theme-medieval .post-title a {
   font-family: Georgia, "Times New Roman", serif;
   letter-spacing: 0.06em;
   text-shadow: none;
+  text-indent: 0;
+}
+
+body.theme-medieval strong {
+  color: var(--medieval-bold);
 }
 
 body.theme-medieval h1,
 body.theme-medieval .post-title,
 body.theme-medieval .post-title a {
-  color: #74352a;
+  color: var(--medieval-heading);
 }
 
 body.theme-medieval h2,
 body.theme-medieval blockquote,
 body.theme-medieval code,
 body.theme-medieval kbd {
-  color: #76552d;
+  color: var(--medieval-secondary);
 }
 
 body.theme-medieval blockquote,
@@ -56,11 +87,11 @@ body.theme-medieval th,
 body.theme-medieval td,
 body.theme-medieval button,
 body.theme-medieval img {
-  border-color: #8a6b3f;
+  border-color: var(--medieval-border);
 }
 
 body.theme-medieval button {
-  color: #5a3924;
+  color: var(--medieval-bold);
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
@@ -68,12 +99,13 @@ body.theme-medieval button {
 body.theme-medieval .post-content > div > p:first-of-type::first-letter {
   float: left;
   margin: 0.08em 0.12em 0 0;
-  color: #74352a;
+  color: var(--medieval-heading);
   font-size: 3.2em;
   line-height: 0.8;
+  text-indent: 0;
 }
 
 body.theme-medieval a {
-  color: #74352a;
-  text-decoration-color: #a1814b;
+  color: var(--medieval-link);
+  text-decoration-color: var(--medieval-link-underline);
 }

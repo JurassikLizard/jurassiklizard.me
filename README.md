@@ -51,6 +51,25 @@ Article text starts here.
 - Use normal Markdown headings, links, code fences, and images in `index.md`.
 - To use the medieval theme for one article, add `theme = "medieval"` to its front matter. Without it, the article uses the normal theme.
 
+### Front matter options
+
+These are the fields read by the post templates and theme:
+
+| Field | What it does |
+| --- | --- |
+| `title`, `date`, `author`, `description` | Set the title, publication date, byline, and summary used for page and social metadata. |
+| `cover`, `coverCredit` | Choose a page-bundle cover image and optional credit (shown on hover). |
+| `tags`, `categories`, `keywords` | Add post tags, Open Graph categories, and SEO keywords. Use arrays, e.g. `tags = ["writing", "fantasy"]`. |
+| `theme` | Select a matching stylesheet in `assets/css/themes/`, e.g. `"medieval"`. |
+| `draft` | Keep the post out of normal builds; preview with `hugo server -D`. |
+| `noindex` | Set to `true` to ask search engines not to index the page. |
+| `readingTime` | Set to `true` to show the estimated reading time and word count. |
+| `Toc`, `TocTitle` | Set `Toc = true` to show a table of contents; optionally change its heading. |
+| `hideComments` | Set to `true` to hide the Giscus comments section. |
+| `authorTwitter` | Override the Twitter creator for this post when Twitter metadata is configured site-wide. |
+| `showFullContent` | Show the full post in theme-generated lists instead of a summary. |
+| `lastmod` | Supply an updated date; it is displayed only if `showLastUpdated` is enabled in the site config. |
+
 A new draft can also be created with:
 
 ```sh
@@ -80,6 +99,12 @@ theme = "medieval"
 The medieval theme gives the article a parchment-and-manuscript look and omits the animated Three.js background. Theme CSS lives in `assets/css/themes/`. Add another theme with a matching file, for example `assets/css/themes/my-theme.css`, and select it with `theme = "my-theme"`.
 
 No image upload is required for a theme. Cover images remain optional and, when used, belong beside `index.md` as `cover.png`, `cover.jpg`, or `cover.webp`.
+
+### Custom fonts and text styles
+
+For a medieval post, put the font at `static/fonts/rune-script.woff2` (or update its URL in `assets/css/themes/medieval.css`). Edit that stylesheet's top color variables to change text, bold text, headings, links, and borders. Markdown italics and bold work normally (`*italic*`, `**bold**`).
+
+For custom text, use the `style` shortcode: `{{< style class="rune" >}}ᚱᚢᚾᛖ{{< /style >}}`. Define its class in the medieval stylesheet; the `rune` class uses the custom font.
 
 ## Project layout
 
