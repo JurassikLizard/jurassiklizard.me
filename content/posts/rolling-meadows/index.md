@@ -93,4 +93,4 @@ This, of course, piqued A*'s interest. He'd never been able to handle money, as 
 
 {{< softbreak >}}
 
-And so the pair rode on, passing the countryside at a gallop rather than a walk. A*, who'd never been on a horse, had to hold on for dear life and did not have a chance to appreciate the scenery they were passing. 
+And so the pair rode on, passing the countryside at a gallop rather than a walk. A*, who'd never been on a horse, had to hold on for dear life and did not have a chance to appreciate the scenery they were passing. There was not much opportunity for conversation, but A* did find out that the strangers name was B*.
