@@ -108,7 +108,7 @@ A* considered the offer. It was more than a fair price for a day's company, enou
 
 {{< softbreak >}}
 
-B* hauled A* up behind him with a single, effortless pull, and before A* could find his balance, the horse surged forward. A* had never ridden anything; the sudden, violent rhythm of even the horses quick trot knocked the breath straight out of his lungs. With no stirrups of his own, his knees slipped against the horse’s slick flanks. He was forced to grab fistfuls of B*’s embroidered coat just to keep from pitching backward into the dirt. Right there, inches from his own shin, B*’s crimson-stained boot bounced rhythmically against the stirrup, and his strange swords pressed against A*'s thigh. A* decided to keep his mouth shut, avoiding a confrontation, but also to control his gagging as the horse switched between a trot and canter.
+B* hauled A* up behind him with a single, effortless pull, and before A* could find his balance, the horse surged forward. A* had never ridden anything; the sudden, violent rhythm of even the horses quick trot knocked the breath straight out of his lungs. With no stirrups of his own, his knees slipped against the horse’s slick flanks. He was forced to grab fistfuls of B*’s embroidered coat just to keep from pitching backward into the dirt. Right there, inches from his own shin, B*’s crimson-stained boot bounced rhythmically against the stirrup, and his curved sword pressed against A*'s thigh. A* decided to keep his mouth shut, avoiding a confrontation, but also to control his gagging as the horse switched between a trot and canter.
 
 {{< softbreak >}}
 
@@ -120,4 +120,4 @@ After what seemed like forever, the walls of K& finally came into view. Instead 
 
 {{< softbreak >}}
 
-A* turned the coins over in his hand, feeling the grooves of the metal. Looking closely, he noticed the gold was engraved with a serpent like animal, which he had never seen. Even though he rarely held gold, he knew that the coins he had just received were not the standard pieces handled in his village. Pocketing the gold, he climbed out of the ditch and approached the front gate.
+A* turned the coins over in his hand, feeling the grooves of the metal. Looking closely, he noticed the gold was engraved with a serpent like animal, which he had never seen. Even though he rarely held gold, he knew that the coins he had just received were not the standard pieces handled in his village. Feeling cheated, and knowing no one would take it, he felt a burning in his throat and swallowed his tears. Pocketing the gold, he climbed out of the ditch and dragged his feet the front gate.
