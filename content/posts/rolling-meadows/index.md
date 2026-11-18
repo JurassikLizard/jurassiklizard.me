@@ -48,11 +48,11 @@ Furrowing his brow at the response, A* headed off. The pair walked along, and th
 
 {{< softbreak >}}
 
-Suddenly A* dropped to fix his shoe, motioning for the stranger to continue on without him. Standing up after removing the annoying pebble, he looked at the stranger from behind for the first time. He noticed that there were bumps visible through the strangers' tunic. Every so slightly that only the keenest eye could notice, it was as though there were small bones protruding from his back, hidden under his skin, and his tunic. Catching up hastily to avoid suspicion, A* could not help but thinking that he had imagined it. Nonetheless, he could not shake the image from his mind.
+Suddenly A* dropped to fix his shoe, motioning for the stranger to continue on without him. Standing up after removing the annoying pebble, he looked at the stranger from behind for the first time. He noticed that there were bumps visible through the strangers' tunic. Ever so slightly that only the keenest eye could notice, it was as though there were small bones protruding from his back, hidden under his skin, and his tunic. Catching up hastily to avoid suspicion, A* could not help but thinking that he had imagined it. Nonetheless, he could not shake the image from his mind.
 
 {{< softbreak >}}
 
-The stranger, broke his train of thought. "Where are ye from, anyway?"
+The stranger broke his train of thought. "Where are ye from, anyway?"
 
 {{< softbreak >}}
 
@@ -72,7 +72,7 @@ And so they continued on the path, passing through creeks and thickets, in valle
 
 {{< softbreak >}}
 
-Who could this man be? Given his accent, embroidered clothes, and strange sword, he was obviously not local, at least to the villages A* had encountered. He had heard stories of wanderers, but nothing specific. His boots, however, were strangely familiar. He had a similar pair at home, kept for slaughtering pigs. They too were stained a dark crimson, though A* had never given much thought to it. Before he could dwell on it, B* came crashing back through the undergrowth, insisting they be off.
+Who could this man be? Given his accent, embroidered clothes, and strange sword, he was obviously not local, at least to the villages A* had encountered. He had heard stories of wanderers, but nothing specific. His boots, on second thought, were strangely familiar. He had a similar pair at home, kept for slaughtering pigs. They, too, were stained a dark crimson, though A* had never given much thought to it. Before he could dwell on it, B* came crashing back through the undergrowth, insisting they be off.
 
 {{< softbreak >}}
 
@@ -84,8 +84,7 @@ Who could this man be? Given his accent, embroidered clothes, and strange sword,
 
 {{< softbreak >}}
 
-"Indeed, but I have no way to know which way I shall go."
-"Tell you what, why don't you ride with me? We'll reach town in only a day."
+"Indeed, but I have no way to know which way I shall go." The stranger turned, "Tell you what, why don't you ride with me? We'll reach town in only a day."
 
 {{< softbreak >}}
 
@@ -109,4 +108,16 @@ A* considered the offer. It was more than a fair price for a day's company, enou
 
 {{< softbreak >}}
 
-And so the pair rode on, passing the countryside at a gallop rather than a walk. A*, who'd never been on a horse, had to hold on for dear life and did not have a chance to appreciate the scenery they were passing. There was not much opportunity for conversation, but A* did find out that the stranger's name was B*.
+B* hauled A* up behind him with a single, effortless pull, and before A* could find his balance, the horse surged forward. A* had never ridden anything; the sudden, violent rhythm of even the horses quick trot knocked the breath straight out of his lungs. With no stirrups of his own, his knees slipped against the horse’s slick flanks. He was forced to grab fistfuls of B*’s embroidered coat just to keep from pitching backward into the dirt. Right there, inches from his own shin, B*’s crimson-stained boot bounced rhythmically against the stirrup, and his strange swords pressed against A*'s thigh. A* decided to keep his mouth shut, avoiding a confrontation, but also to control his gagging as the horse switched between a trot and canter.
+
+{{< softbreak >}}
+
+After what seemed like forever, the walls of K& finally came into view. Instead of riding through the main gate, B* jerked the horse into a side ditch and dismounted from the saddle.
+
+{{< softbreak >}}
+
+"Here ya go." He barked, and 2 heavy coins fell into A*'s palm. Before he could say anything, B* was gone.
+
+{{< softbreak >}}
+
+A* turned the coins over in his hand, feeling the grooves of the metal. Looking closely, he noticed the gold was engraved with a serpent like animal, which he had never seen. Even though he rarely held gold, he knew that the coins he had just received were not the standard pieces handled in his village. Pocketing the gold, he climbed out of the ditch and approached the front gate.
