@@ -44,6 +44,53 @@ At this, the man mumbled something which A* could not make out. "Where are you a
 
 {{< softbreak >}}
 
-As the pair headed off, the morning fog rolled into the hills and the sky began slowly 
+As the pair headed off, the morning fog rolled into the hills and the sky began to slowly brighten. Determining that the stranger was not to be trusted, A* wanted to question the stranger on their trip to H&. However much he pressed, though, the stranger would not tell him anything. The most he learned was that the stranger had to depart for his current trip incredibly quickly, and for some unknown reason, desperately needed to find the nearest town.
 
-Deciding that the stranger was not to be trusted, A* decided to questioning
+{{< softbreak >}}
+
+Suddenly A* dropped to fix his shoe, motioning for the stranger to continue on without him. Standing up after removing the annoying pebble, he looked at the stranger from behind for the first time. He noticed that there were bumps visible through the strangers' tunic. Every so slight that only the keenest eye could notice, it was as though there were small bones protruding from his back, hidden under his skin, and his tunic. A* jogged to catch up with the stranger, and resolved himself start a new conversation, as to not get lost in thought about the bumps. 
+
+{{< softbreak >}}
+
+The stranger, though, beat him to it. "Where are yourself from, anyway?"
+
+{{< softbreak >}}
+
+"I've grown up my entire life in the small village of N&, around a weeks worth of travel from here. Just turned 16, so I left to go look for an apprenticeship and work. I'm hoping I can find something in K&."
+
+{{< softbreak >}}
+
+"Aha! So you too, indeed, are looking for a nearby town."
+
+{{< softbreak >}}
+
+"Yes, I guess so." responded A* disappointedly, since he had now given the stranger a reason to stick with him the whole way.
+
+{{< softbreak >}}
+
+And so they continued on the path, passing through creeks and thickets, in valleys and hills. Soon enough, the stranger started complaining; "Argh, is there any way we can go  faster?"
+
+{{< softbreak >}}
+
+"You have a horse, you can ride ahead, if you'd like."
+
+{{< softbreak >}}
+
+"Indeed, but I have no way to know which way I shall go."
+"Tell you what, why don't you ride with me? We'll gallop there in only a day."
+
+{{< softbreak >}}
+
+"I'm fine walking, thank you." A* said curtly.
+
+{{< softbreak >}}
+
+"I'll pay you 2 gold to be my guide."
+
+{{< softbreak >}}
+
+This, of course, piqued A*'s interest. He'd never been able to handle money, as the few coins that his family earned were always quickly exchanged in a barter for goods. "Very well" he said. 
+
+{{< softbreak >}}
+
+And so the pair rode on, passing the countryside at a gallop rather than a walk. A*, who'd never been on a horse, had to hold on for dear life and did not have a chance to appreciate the scenery they were passing. 
